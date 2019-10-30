@@ -1,0 +1,15 @@
+server:
+  port: 2032
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: chakri
+    url: jdbc:oracle:thin:@localhost:1522:xe
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
